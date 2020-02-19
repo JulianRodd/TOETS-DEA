@@ -1,0 +1,43 @@
+MAVEN
+
+Kan externe libraries toevoegen als Maven dependency. 																				         - Library code in het POM.xml bestand stoppen tussen de <dependency> tags. 
+Kan versies van dependencies aanpassen. 																									 - Nummertje ophogen van dependency binnen het pom.xml bestand.
+Kan Maven command-line gebruiken voor het runnen en unit-testen van een applicatie. 														 - Door 'mvn test' uit te voeren voor alle tests. 'mvn -Dtest=TestMasterMind.java test' voor een testklasse.
+Kent de lifecycle van Maven met minimaal de goals clean, compile, test en package. Zie C:\Users\julia\Desktop\DEA 						     - ICT - TOETS\Maven voor alle lifecycles met uitleg.
+
+JUnit
+
+Kent het verschil tussen unit-tests en integration-tests. 																					 - Een unit test test een module in het systeem, een integration test test meerdere modules samen als een groep.
+Kan de scope van een unit-test bepalen.  																									 -   Unit Testing test alleen de functionaliteit van de units zelf en kan geen integratiefouten of andere systeembrede problemen bevatten
+Kent de TDD red-green-refactor-cycle.    																									 -   Staat op powerpoint in C:\Users\julia\Desktop\DEA - ICT - TOETS\JUnit. 
+Kan op de TDD wijze testcases definieren die zorgen voor 100% linecoverage van een of twee classes bestaande uit enkele methoden. Hierbij worden niet alleen "happy day"-scenario's getest maar ook randgevallen en uitzonderingen. 
+Kan JUnit als framework gebruiken om testcases te schrijven en uit te voeren 															     - Voorbeeld staat op C:\Users\julia\Desktop\DEA - ICT - TOETS\JUnit. 
+Kan unit tests uitvoeren in IntelliJ waarbij een coverage rapportage gegenereerd wordt.  												     -  In intelliJ op test with coverage drukken. 
+Kan unit tests uitvoeren met Maven op de command-line.																						 - Door 'mvn test' uit te voeren voor alle tests. 'mvn -Dtest=TestMasterMind.java test' voor een testklasse.
+
+Java Exceptions en debuggen
+
+Kan gebruik maken van try en catch om een exception af te vangen																			 - Voorbeeld staat in C:\Users\julia\Desktop\DEA - ICT - TOETS\Exceptions\EigenExceptionInTryCatch
+Kent de verschillen tussen checked en unchecked exceptions																					 - Checked zijn compilatie errors, moet worden afgehandeld binnen try catch. Unchecked zijn runtime errors.
+Kan zelf nieuwe checked of unchecked exceptions definieren als subclasses van RuntimeException of Exception. 							     - Voorbeeld staat in C:\Users\julia\Desktop\DEA - ICT - TOETS\Exceptions\EigenExceptionInTryCatch
+Kan zelfstandig nieuwe exceptions instantieren en "gooien" met de keywords throw en throws.													 - Voorbeeld staat op deze site C:\Users\julia\Desktop\DEA - ICT - TOETS\Exceptions\VoorbeeldExceptionHandlingThrowTryCatch
+Kan in unit tests checken of de juiste exception op het juiste moment komt. 																 - Voorbeeld staat op deze site C:\Users\julia\Desktop\DEA - ICT - TOETS\Exceptions
+
+Refactoring
+
+Kent de refactoring principes en weet wanneer en waarom code gerefactord moet worden.                                                        - De refactoring principes staan op C:\Users\julia\Desktop\DEA - ICT - TOETS\Refactoring en ze moeten opgeslost worden door te kijken op https://refactoring.guru/
+Kent de rol van refactoring in de TDD-cyclus. 																								 - Als de code werkt en getest is, ga je refactoring. Elke keer als je wat refactorored moet je direct opnieuw teten. 
+Kent de volgende bad smells en herkent deze in broncode: Duplicated Code, Long Method and Large Class, Magic Number, Comments, Message Chains.	- Uitleg erover staat op https://refactoring.guru/
+Kent de volgende refactorings en kan deze in broncode toepassen om de bovenstaande bad smells te verwijderen: Extract Constant, Extract Method, Move Method, Extract Class.   - IntelliJ laat dit met rechter muisknop zien.    																			 
+
+Java Streams en Lambda expressies
+
+Is bekend met de Stream API en kan hem toepassen om Collections te filteren, te converteren, of elementen eruit te selecteren.			      - Zie C:\Users\julia\Desktop\DEA - ICT - TOETS\Streams voor voorbeeld, in het bestand worden ze allemaal gebruikt.
+Kan een Funcional Interface maken en deze als lambda-expressie implementeren																  - Een interface met minimaal een abstracte klassen.
+
+Java Multithreading
+
+Kan met de API-onderdelen Thread en Runnable een class multi-threaded maken																	- Eerst runnable aanmaken dan de runnable in een thread stoppen. Die thread kun je starten. Zie voorbeeld powerpoint C:\Users\julia\Desktop\DEA - ICT - TOETS\Multi-Threading 
+Kan een thread correct starten en stoppen en kent de beperkingen van de API bij het stoppen. 												- Door een exceptie wordt een thred gestopt, maar het kan ook op andere mannieren die ik niet begrijp.
+Kan het keyword synchronized correct inzetten om te voorkomen dat threads tegelijk een gedeelde resource benaderen.							- Door synchronized kan maar een thread een bepaalde functie gebruiken. Hierdoor wordt concurrency voorkomen 
+Weet het verschil tussen multi-threading en multi-processing en welke rol de JVM, een besturingssysteem en de processor met zijn cores hierin spelen.   - Multi threading is meerder threads op een processor, multiprocessing is meerder processen meerdere processors. 

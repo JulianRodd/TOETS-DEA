@@ -1,0 +1,8 @@
+@Test
+void testExpectedException() {
+ 
+Klasse object = new Klasse(); 
+
+  Assertions.assertThrows(JeEigenExceptionOfEenBestaande.class, object::FunctieNaamUitKLasse());
+ 
+}

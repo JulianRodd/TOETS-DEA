@@ -1,0 +1,12 @@
+Duplicate Code
+Long Method
+Large Class
+Long Parameter List
+Feature Envy
+Data Clumps
+Speculative Generality
+Temporary Field
+Message Chains
+Inappropriate Intimacy
+Comments
+Magic Numbers
