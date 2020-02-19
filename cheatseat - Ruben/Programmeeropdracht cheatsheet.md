@@ -43,8 +43,8 @@ mvn archetype:generate -DgroupId=ica.han.oose.dea -DartifactId=multithreading-op
 
 3. Wacht tot Intellij klaar is met opzetten van de project structuur en open daarna je pom bestand 
 
-   ![image-20200218173108576](.\pom in intellij.png)
-
+   
+      ![image-20200218173108576](.\pominintellij.png)
 4. Vervang jou gehele pom bestand met het volgende: 
 
    ```xml
@@ -144,7 +144,7 @@ mvn archetype:generate -DgroupId=ica.han.oose.dea -DartifactId=multithreading-op
 
 5. Intellij zal nu rechts onder in je scherm vragen om de wijzigingen te importeren. Je krijgt nu ook de optie 'Enable auto-import', doe dit. 
 
-   ![image-20200218173108576](.\maven auto import.png)
+   ![image-20200218173108576](.\maven_auto_import.png)
 
 
 
@@ -164,17 +164,17 @@ mvn archetype:generate -DgroupId=ica.han.oose.dea -DartifactId=multithreading-op
 
    druk op ```Ctrl + alt + s ``` en navigeer naar java compiler (Zie onderstaande afbeelding). 
 
-![image-20200218173108576](.\java compiler.png)
+![image-20200218173108576](.\java_compiler.png)
 
 Zet de java compiler naar de versie die jij hebt ingesteld in je pom bestand 
 
-![image-20200218173108576](.\java compiler2.png)
+![image-20200218173108576](.\java_compiler2.png)
 
 Klik vervolgens op ```ctrl + alt + shift + s``` en navigeer naar project
 
 Stel hier je SDK in op de hoogste versie die voor jou beschikbaar is, minimaal 1.8 (java 8), maar liever 10 of hoger. Zorg dat dit ook overeenkomt met de compiler en je pom bestand. 
 
-![image-20200218173108576](.\project sdk.png)
+![image-20200218173108576](.\project_sdk.png)
 
 Dit voorkomt een aantal foutmeldingen die erg vervelend kunnen zijn tijdens de toets. 
 
@@ -488,15 +488,17 @@ Je kan op een stream een aantal verschillende functies uitvoeren. Deze kan je ve
 
 reduce() ga ik niet behandelen, omdat het vergelijkbaar is met de sum() functie maar dan iets ingewikkelder. collect() kan je uit de context van de voorbeelden afleiden dus zal ik ook niet uitwerken.
 
-de volgende operations zijn non-terminal en hier kan je er zoveel achter elkaar plakken als je wil. Een stream moet overigens wil eindigen in een terminal operation.
+De volgende operaties zijn terminal:
+- sum()
+- Max()
+- Min()
 
+De volgende operations zijn non-terminal en hier kan je er zoveel achter elkaar plakken als je wil. Een stream moet overigens wil eindigen in een terminal operation.
 - filter()
 - map()
 - distinct()
 - sorted()
-- sum()
-- Max()
-- Min()
+
 
 ## 5.1 Lijst of array omzetten naar een stream
 
